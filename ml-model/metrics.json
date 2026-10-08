@@ -1,0 +1,43 @@
+{
+  "dataset": "NSL-KDD (CICIDS2017-style network intrusion dataset, public, no auth)",
+  "dataset_url": "https://raw.githubusercontent.com/defcom17/NSL_KDD/master/",
+  "train_rows": 125973,
+  "test_rows": 22544,
+  "features": 122,
+  "model": "RandomForestClassifier(n_estimators=100, random_state=42)",
+  "classes": [
+    "Normal",
+    "Attack"
+  ],
+  "accuracy": 0.7648,
+  "precision": 0.967,
+  "recall": 0.6075,
+  "f1": 0.7462,
+  "confusion_matrix": {
+    "tn": 9445,
+    "fp": 266,
+    "fn": 5037,
+    "tp": 7796
+  },
+  "attack_vector_distribution_test": {
+    "Normal": 9711,
+    "DDoS": 7458,
+    "Recon": 2421,
+    "R2L": 1656,
+    "Brute Force": 1231,
+    "Malware": 35,
+    "U2R": 32
+  },
+  "top_features": [
+    "src_bytes",
+    "dst_bytes",
+    "flag_SF",
+    "dst_host_same_srv_rate",
+    "dst_host_srv_count",
+    "logged_in",
+    "same_srv_rate",
+    "dst_host_srv_serror_rate",
+    "diff_srv_rate",
+    "protocol_type_icmp"
+  ]
+}
